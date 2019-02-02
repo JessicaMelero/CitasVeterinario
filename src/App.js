@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './componentes/Header';
+import AgregarCita from './componentes/AgregarCita';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,11 @@ class App extends Component {
         <Header
           titulo={'Administrador de pacientes'}
         />
+        <div className="row">
+          <div className="col-md-6">
+            <AgregarCita/>
+          </div>
+        </div>
       </div>
     );
   }
