@@ -28,8 +28,11 @@ class AgregarCita extends Component{
             hora,
             sintomas
         }
-
+        // envia objeto al padre para actualizar el state
         this.props.crearCita(nuevaCita);
+
+        // reinicia el formulario
+        e.currentTarget.reset();
     }
 
     render(){
