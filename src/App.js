@@ -5,8 +5,8 @@ import './App.css';
 
 class App extends Component {
 
-  crearCita = () => {
-    console.log("desde app");
+  crearCita = (cita) => {
+    console.log(cita);
   }
 
   render() {
