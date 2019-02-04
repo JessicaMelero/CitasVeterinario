@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   crearCita = (nuevaCita) => {
-    //console.log(cita);
+    
     const citas = [...this.state.citas, nuevaCita];
 
     console.log(citas);
