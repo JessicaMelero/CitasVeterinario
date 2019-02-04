@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
 class Lista extends Component{
+
+    eliminarCita = () =>{
+        this.props.borrarCita(this.props.info.id);
+    }
+
     render(){
 
         const {mascota, dueño, fecha, hora, sintomas} = this.props.info;
@@ -14,7 +19,9 @@ class Lista extends Component{
                     <p className="card-text"><span>Hora: </span>{hora}</p>
                     <p className="card-text"><span>Síntomas: </span></p>
                     <p className="card-text">{sintomas}</p>
-                </div>
+
+                    <button onClick={this.eliminarCita} className="btn btn-danger">Borrar &times;</button>
+                </div> 
             </div>
         )
     }
